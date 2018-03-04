@@ -1,0 +1,62 @@
+<div class="container">
+  <form (ngSubmit)="onSubmit()" #commandeForm="ngForm">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-header badge badge-Success">
+              <h3>Machine coffee</h3>
+              <br>
+            </div>
+            <div class="card-body">
+
+
+              <div class="form-group">
+                <label for="boisson" class="badge badge-Info">Type de boisson :</label>
+                <select id="boisson" required [(ngModel)]="commande.boissonId" name="boissonId" #boissonId="ngModel">
+                  <option *ngFor="let boisson of boissons" [ngValue]="boisson.boissonId">{{boisson.typeBoisson}}</option>
+                </select>
+              </div>
+
+              
+
+              <div class="form-group">
+                <label for="email" class="badge badge-Info">Quantité de sucre:</label>
+                <select id="boisson" required [(ngModel)]="commande.sucre" name="sucre" #sucre="ngModel">
+                  <option *ngFor="let s of sucre" [ngValue]="s">{{s}}</option>
+                </select>
+              </div>
+               
+              <div class="form-group">
+                <label class="form-check-label" class="badge badge-Info">
+                <input type="checkbox" class="form-check-input" value="" id="withMug" required [(ngModel)]="commande.withMug" name="withMug"/>utiliser votre propre Mug</label>
+
+              </div>
+
+              <div class=" form-group ">
+                <label class="form-check-label" class="badge badge-Info">
+               
+                <input type="checkbox" class="form-check-input" value="" id="memoeryFlage" required [(ngModel)]="commande.memoeryFlage" name="memoeryFlage">Memoriser la commannde </label>
+              </div>
+            </div>
+            <div class="card-footer">
+              <button type="submit" class="btn btn-success" [disabled]="!commandeForm.form.valid">Commander</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </form>
+</div>

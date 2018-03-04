@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.Models", "CoffeeMachine_Modules\CoffeeMachine.Models.csproj", "{A6E40BE7-7CE0-422D-AACC-8752E25BFBA5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.GetWay", "CoffeeMachine_Repository\CoffeeMachine.GetWay.csproj", "{133234E3-7F8E-497B-B936-34FBCAEA910A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{43527313-83B4-4141-B883-EDE216FD3877}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeMachine.WebApi", "CoffeMachine.WebApi\CoffeMachine.WebApi.csproj", "{F78018D8-DFD7-49F8-B7D8-E6FC8D871C41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeMachine.WebApi.Tests", "CoffeMachine.WebApi.Tests\CoffeMachine.WebApi.Tests.csproj", "{59984ECF-922A-4A23-89A5-0A40179148CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6E40BE7-7CE0-422D-AACC-8752E25BFBA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6E40BE7-7CE0-422D-AACC-8752E25BFBA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6E40BE7-7CE0-422D-AACC-8752E25BFBA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6E40BE7-7CE0-422D-AACC-8752E25BFBA5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{133234E3-7F8E-497B-B936-34FBCAEA910A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{133234E3-7F8E-497B-B936-34FBCAEA910A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{133234E3-7F8E-497B-B936-34FBCAEA910A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{133234E3-7F8E-497B-B936-34FBCAEA910A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43527313-83B4-4141-B883-EDE216FD3877}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43527313-83B4-4141-B883-EDE216FD3877}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43527313-83B4-4141-B883-EDE216FD3877}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43527313-83B4-4141-B883-EDE216FD3877}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F78018D8-DFD7-49F8-B7D8-E6FC8D871C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F78018D8-DFD7-49F8-B7D8-E6FC8D871C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F78018D8-DFD7-49F8-B7D8-E6FC8D871C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F78018D8-DFD7-49F8-B7D8-E6FC8D871C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59984ECF-922A-4A23-89A5-0A40179148CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59984ECF-922A-4A23-89A5-0A40179148CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59984ECF-922A-4A23-89A5-0A40179148CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59984ECF-922A-4A23-89A5-0A40179148CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
