@@ -14,16 +14,7 @@ namespace CoffeMachine.WebApi.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        public IEnumerable<Boisson> Get()
-        {
-
-            CoffeeMachineDbContext cntx = new CoffeeMachineDbContext();
-            UnitOfWork _unitOfWork = new UnitOfWork(cntx);
-            var boisson = _unitOfWork.Repository<Boisson>();
-            return boisson.GetAll().ToList();
-
-            //return new string[] { "value1", "value2" };
-        }
+        
 
         // GET api/values/5
         public string Get(int id)

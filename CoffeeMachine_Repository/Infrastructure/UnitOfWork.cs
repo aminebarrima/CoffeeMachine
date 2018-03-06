@@ -9,11 +9,13 @@ namespace CoffeeMachine.GetWay.Infrastructure
     public class UnitOfWork : IUnitOfWork
     {
         private readonly CoffeeMachineDbContext _entities = null;
+     //   CoffeeMachineDbContext _entities;// = new CoffeeMachineDbContext();
         public Dictionary<Type, object> Repositories = new Dictionary<Type, object>();
 
         public UnitOfWork(CoffeeMachineDbContext entities)
         {
-            this._entities = entities;
+             this._entities = entities;
+          //  _entities = new CoffeeMachineDbContext();
         }
 
         public IRepository<T> Repository<T>() where T : class

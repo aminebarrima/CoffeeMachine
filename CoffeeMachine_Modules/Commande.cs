@@ -14,7 +14,7 @@ namespace CoffeeMachine.Models
         public int badgeId { get; set; }
         public int boissonId { get; set; }
         public bool memoeryFlage { get; set; }
-      
+        public int sucre { get; set; }
         public virtual  Boisson boisson { get; set; }
         public virtual Badge badge { get; set; }
     }

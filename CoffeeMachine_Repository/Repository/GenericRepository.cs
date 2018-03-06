@@ -68,11 +68,13 @@ namespace CoffeeMachine.GetWay
         /// Delete an element from the list
         /// </summary>
         /// <param name="entity"></param>
+        /// 
+      
         public void Delete(T entity)
         {
             _objectSet.Remove(entity);
         }
-
+       
         public void DeleteRange(List<T> entity)
         {
             _objectSet.RemoveRange(entity);
@@ -96,5 +98,7 @@ namespace CoffeeMachine.GetWay
             }
             return query;
         }
+
+       
     }
 }

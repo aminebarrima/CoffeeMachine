@@ -16,7 +16,7 @@ namespace CoffeeMachine.GetWay.Migrations
         {
             AutomaticMigrationsEnabled = true;
             ContextKey = "CoffeeMachine_Repository.CoffeeMachineDbContext";
-         
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(CoffeeMachine.GetWay.CoffeeMachineDbContext context)
@@ -29,9 +29,9 @@ namespace CoffeeMachine.GetWay.Migrations
 
         var Boisson = new List<Boisson>
             {
-                new Boisson {typeBoisson="thé",sucre=2 },
-               new Boisson {typeBoisson="café",sucre=2 },
-            new Boisson {typeBoisson="chocolat",sucre=2 }
+                new Boisson {typeBoisson="thé" },
+               new Boisson {typeBoisson="café"  },
+            new Boisson {typeBoisson="chocolat"  }
 
             };
            
@@ -49,7 +49,7 @@ namespace CoffeeMachine.GetWay.Migrations
             var commande = new List<Commande>
             {
 
-                new Commande {withMug=false,memoeryFlage=true,dateCommande=DateTime.Parse("2018-03-04"),badgeId=1,boissonId=1 },
+                new Commande {withMug=false,memoeryFlage=true,sucre=2,dateCommande=DateTime.Now, badgeId=1,boissonId=1 },
 
             };
 

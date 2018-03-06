@@ -10,7 +10,7 @@ namespace CoffeeMachine.Models
     {
         public int boissonId { get; set; }
         public string typeBoisson { get; set; }
-        public int sucre { get; set; }
+    
         public virtual ICollection<Commande> commandes { get; set; }
 
 

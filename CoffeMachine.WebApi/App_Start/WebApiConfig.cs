@@ -6,6 +6,7 @@ using System.Web.Http;
 using Microsoft.Owin.Security.OAuth;
 using Newtonsoft.Json.Serialization;
 using System.Net.Http.Headers;
+using System.Web.Http.Cors;
 
 namespace CoffeMachine.WebApi
 {
@@ -18,6 +19,10 @@ namespace CoffeMachine.WebApi
             config.SuppressDefaultHostAuthentication();
             config.Filters.Add(new HostAuthenticationFilter(OAuthDefaults.AuthenticationType));
 
+
+            // Web API configuration and services
+            var cors = new EnableCorsAttribute("*", "*", "*");
+            config.EnableCors(cors);
             // Itinéraires de l'API Web
             config.MapHttpAttributeRoutes();
 
