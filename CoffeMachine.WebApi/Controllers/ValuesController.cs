@@ -14,8 +14,11 @@ namespace CoffeMachine.WebApi.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
-        
 
+        public string Get()
+        {
+            return "value";
+        }
         // GET api/values/5
         public string Get(int id)
         {

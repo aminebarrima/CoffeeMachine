@@ -3,6 +3,8 @@ using System.Linq;
 using System.Web.Http;
 using CoffeeMachine.Models;
 using CoffeeMachine.GetWay.Infrastructure;
+using System;
+
 namespace CoffeMachine.WebApi.Controllers
 {
     public class BoissonsController : ApiController
@@ -15,12 +17,14 @@ namespace CoffeMachine.WebApi.Controllers
         }
 
         // GET: api/Boissons
+        [HttpGet]
+        [Route("api/Boissons")]
         public IEnumerable<Boisson> GetBoisson()
-        { 
+        {
            
-            var boisson = _unitOfWork.Repository<Boisson>();
-            return boisson.GetAll().ToList();
-           
+            var boissonRepository = _unitOfWork.Repository<Boisson>();
+            return boissonRepository.GetAll().ToList();
+             
         }
 
         //// GET: api/Boissons/5

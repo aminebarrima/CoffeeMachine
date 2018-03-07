@@ -6,6 +6,7 @@ import { Commande } from '../Dto/Commande';
 import { CommandeService } from '../Services/commande.service';
 import { NgForm } from '@angular/forms';
 import { Badge } from '../Dto/Badge';
+import { BadgeService } from '../Services/badge.service';
 
 @Component({
   selector: 'app-commande',
@@ -19,21 +20,33 @@ export class CommandeComponent implements OnInit {
   commandeSucces = false;
   badge = new Badge();
   sucretable: number[] = [0, 1, 2, 3];
-  constructor(private boissonService: BoissonService, private commandeService: CommandeService) { }
+  constructor(private boissonService: BoissonService, private commandeService: CommandeService, private BadgeService: BadgeService) { }
 
   ngOnInit() {
 
     this.getBoissons();
+    this.getBadge();
   }
   getBoissons(): void {
     this.boissonService.getBoissons()
       .subscribe(boissons => this.boissons = boissons);
   }
-  
-  onSubmit(commandeForm: NgForm) {
-    // this.commandeService.AddCommande();
-    console.log(commandeForm.value);
+  getCommandebyBadge(BadgeId: number): void {
+    this.commandeService.getMemoeryCommandeByBadge(BadgeId)
+      .subscribe(commande => this.commande = commande);
+  }
+  getBadge(): void {
+    this.BadgeService.getBadges()
+      .subscribe(badges => this.badges = badges);
+  }
+  onChange(badgeId:number) {
+    console.log(badgeId);
+    this.getCommandebyBadge(badgeId);
+ 
+}
 
+  onSubmit(commandeForm: NgForm) {    
+    //console.log(commandeForm.value);
     this.commandeService.AddCommande(this.commande)
       .subscribe(commande => {
         this.commande.commandeId = commande,

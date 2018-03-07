@@ -8,6 +8,7 @@ import { FormsModule }    from '@angular/forms';
 import { HttpClientModule }    from '@angular/common/http';
 import { CommandeService } from './Services/commande.service';
 import { ShowErrorsComponent } from './show-errors/show-errors.component';
+import { BadgeService } from './Services/badge.service';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { ShowErrorsComponent } from './show-errors/show-errors.component';
     FormsModule,
     HttpClientModule,
   ],
-  providers: [BoissonService,CommandeService],
+  providers: [BoissonService,CommandeService,BadgeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

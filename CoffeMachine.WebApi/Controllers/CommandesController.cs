@@ -23,7 +23,26 @@ namespace CoffeMachine.WebApi.Controllers
             _unitOfWork = unitOfWork;
         }
 
+        
 
+        [HttpGet]
+        [Route("api/Commandes/{badgeId}")]
+        public IHttpActionResult getMemoeryCommandeByBadge(int badgeId)
+        {
+
+            var commandeRepository = _unitOfWork.Repository<Commande>();
+            var commande = commandeRepository
+                .FindBy(c => c.badgeId== badgeId)
+                .OrderByDescending(o => o.dateCommande)
+                .FirstOrDefault();
+
+            if (commande != null)
+                return Ok(commande);
+            else
+                return NotFound();
+           
+
+        }
         //// GET: api/Commandes
         //public IQueryable<Commande> GetCommande()
         //{
@@ -79,7 +98,7 @@ namespace CoffeMachine.WebApi.Controllers
         //}
 
         // POST: api/Commandes
-        
+
 
         [HttpPost]
         [Route("api/Commandes")]
@@ -89,19 +108,24 @@ namespace CoffeMachine.WebApi.Controllers
             {
                 return BadRequest(ModelState);
             }
-            var repositoryCommande = _unitOfWork.Repository<Commande>();
-            var repositorybadge = _unitOfWork.Repository<Badge>();
-            var badge = new Badge();
-            badge.keyBadge = commande.badge.keyBadge;
-            repositorybadge.Add(badge);
-            _unitOfWork.SaveChanges();
-            commande.badgeId = badge.badgeId;
-            repositoryCommande.Add(commande);
-
-
-            _unitOfWork.SaveChanges();
-
+            try
+            {
+                var commandeRepository = _unitOfWork.Repository<Commande>();
+                commandeRepository.Add(commande);
+                _unitOfWork.SaveChanges();
+            }
+            catch (Exception ex)
+            { 
+                return BadRequest("Error: commande not created :"+ex.Message);
+            }
             return Ok(commande.commandeId);
+
+            //var repositorybadge = _unitOfWork.Repository<Badge>();
+            //var badge = new Badge();
+            //badge.keyBadge = commande.badge.keyBadge;
+            //repositorybadge.Add(badge);
+            //_unitOfWork.SaveChanges();
+            //commande.badgeId = badge.badgeId;
             //return CreatedAtRoute("DefaultApi", new { id = commande.commandeId }, commande);
         }
 

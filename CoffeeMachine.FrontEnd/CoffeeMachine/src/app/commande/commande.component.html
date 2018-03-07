@@ -18,7 +18,7 @@
               
               <div class="form-group">
                   <label for="badge" class="badge badge-Info">Type de boisson :</label>
-                  <select id="badge" required [(ngModel)]="commande.badge.badgeId" name="badgeId" #badgeId="ngModel">
+                  <select id="badge" required [(ngModel)]="commande.badge.badgeId"  (ngModelChange)="onChange($event)" name="badgeId" #badgeId="ngModel">
                     <option *ngFor="let badge of badges" [ngValue]="badge.badgeId">{{badge.keyBadge}}</option>
                   </select>
                 </div>
