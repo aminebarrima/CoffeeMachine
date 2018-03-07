@@ -33,7 +33,14 @@ export class CommandeComponent implements OnInit {
   }
   getCommandebyBadge(BadgeId: number): void {
     this.commandeService.getMemoeryCommandeByBadge(BadgeId)
-      .subscribe(commande => this.commande = commande);
+      .subscribe(commande => {
+        this.commande.boissonId =commande .boissonId,
+        this.commande.badgeId =commande .badgeId,
+        this.commande.sucre =commande .sucre,
+        this.commande.withMug =commande .withMug,
+        this.commande.memoeryFlage =commande .memoeryFlage,
+        console.log(commande)
+      });
   }
   getBadge(): void {
     this.BadgeService.getBadges()
@@ -42,6 +49,7 @@ export class CommandeComponent implements OnInit {
   onChange(badgeId:number) {
     console.log(badgeId);
     this.getCommandebyBadge(badgeId);
+    this.commandeSucces=false;
  
 }
 

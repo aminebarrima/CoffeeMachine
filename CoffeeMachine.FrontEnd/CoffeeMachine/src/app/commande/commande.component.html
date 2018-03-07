@@ -54,7 +54,7 @@
             
             </div>
             <div class="card-footer">
-              <button type="submit" class="btn btn-success" [disabled]="!commandeForm.form.valid">Commander</button>
+              <button type="submit" class="btn btn-success" *ngIf="!commandeSucces" [disabled]="!commandeForm.form.valid">Commander</button>
               <div *ngIf="commandeSucces">commander succes </div>
             </div>
           </div>

@@ -26,7 +26,8 @@ export class CommandeService {
   
   getMemoeryCommandeByBadge (BadgeId: number): Observable<Commande> {
     const url = `${this.CoffeeMachineApiUrl}/${BadgeId}`;     
-    return this.http.get<Commande>(url)     ;
+    return this.http.get<Commande>(url);
+    //return this.http.get(url).subscribe((response: Response) => response.json())
   }
 
 }

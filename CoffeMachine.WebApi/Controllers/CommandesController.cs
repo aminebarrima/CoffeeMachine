@@ -32,7 +32,7 @@ namespace CoffeMachine.WebApi.Controllers
 
             var commandeRepository = _unitOfWork.Repository<Commande>();
             var commande = commandeRepository
-                .FindBy(c => c.badgeId== badgeId)
+                .FindBy(c => c.badgeId== badgeId && c.memoeryFlage==true)
                 .OrderByDescending(o => o.dateCommande)
                 .FirstOrDefault();
 

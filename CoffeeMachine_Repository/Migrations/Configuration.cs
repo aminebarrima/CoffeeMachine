@@ -23,40 +23,31 @@ namespace CoffeeMachine.GetWay.Migrations
         {
             
             base.Seed(context);
-#if DEBUG
+//#if DEBUG
         IUnitOfWork _unitOfWork = new UnitOfWork(context);
 
 
-        var Boisson = new List<Boisson>
+            var Boisson = new List<Boisson>
             {
-                new Boisson {typeBoisson="thé" },
+               new Boisson {typeBoisson="thé" },
                new Boisson {typeBoisson="café"  },
-            new Boisson {typeBoisson="chocolat"  }
+               new Boisson {typeBoisson="chocolat"  }
 
-            };
-           
+            };           
 
             var Badge = new List<Badge>
             {
-
-                new Badge {keyBadge="1234"},
-
+                new Badge {keyBadge="Badge 1"},
+                new Badge {keyBadge="Badge 2"},
+                new Badge {keyBadge="Badge 3"},
             };
-
-          
-
 
             var commande = new List<Commande>
             {
 
-                new Commande {withMug=false,memoeryFlage=true,sucre=2,dateCommande=DateTime.Now, badgeId=1,boissonId=1 },
+                new Commande {withMug=false,memoeryFlage=false,sucre=2,dateCommande=DateTime.Now, badgeId=1,boissonId=1 },
 
             };
-
-            
-
-
-
 
             try
             {
@@ -65,7 +56,6 @@ namespace CoffeeMachine.GetWay.Migrations
 
                 var badges = _unitOfWork.Repository<Badge>();
                 Badge.ForEach(s =>badges.Add(s));
-
 
                 var commandes = _unitOfWork.Repository<Commande>();
                 commande.ForEach(s => commandes.Add(s));
@@ -78,7 +68,7 @@ namespace CoffeeMachine.GetWay.Migrations
                 var msg = ex.Message;
             }
         }
-#endif
+//#endif
     }
 }
 

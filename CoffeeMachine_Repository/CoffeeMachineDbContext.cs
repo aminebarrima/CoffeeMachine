@@ -12,9 +12,9 @@ namespace CoffeeMachine.GetWay
             this.Configuration.LazyLoadingEnabled = false;
             this.Configuration.ProxyCreationEnabled = false;
 
-            Database.SetInitializer(
-              new MigrateDatabaseToLatestVersion<CoffeeMachineDbContext, Configuration>()
-              );
+            //Database.SetInitializer(
+            //  new MigrateDatabaseToLatestVersion<CoffeeMachineDbContext, Configuration>()
+            //  );
         }
 
         public DbSet<Boisson> Boisson { get; set; }
