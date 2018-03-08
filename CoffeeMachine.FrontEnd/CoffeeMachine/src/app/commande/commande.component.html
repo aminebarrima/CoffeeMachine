@@ -12,17 +12,13 @@
             </div>
 
             <div class="card-body">
-             
-
-
-              
+                          
               <div class="form-group">
                   <label for="badge" class="badge badge-Info">Type de boisson :</label>
-                  <select id="badge" required [(ngModel)]="commande.badge.badgeId"  (ngModelChange)="onChange($event)" name="badgeId" #badgeId="ngModel">
+                  <select id="badge" required [(ngModel)]="commande.badgeId"  (ngModelChange)="onChange($event)" name="badgeId" #badgeId="ngModel">
                     <option *ngFor="let badge of badges" [ngValue]="badge.badgeId">{{badge.keyBadge}}</option>
                   </select>
-                </div>
-             
+                </div>             
 
                 <div class="form-group">
                   <label for="boisson" class="badge badge-Info">Type de boisson :</label>
@@ -42,20 +38,23 @@
 
                 <div class="form-group">
                   <label class="form-check-label" class="badge badge-Info">
-                    <input type="checkbox" class="form-check-input" value="" id="withMug" [(ngModel)]="commande.withMug" name="withMug" />utiliser votre propre Mug</label>
+                    <input type="checkbox" class="form-check-input" value="" id="withMug" [(ngModel)]="commande.withMug" name="withMug" />Utiliser votre propre Mug</label>
 
                 </div>
 
                 <div class=" form-group ">
                   <label class="form-check-label" class="badge badge-Info">
 
-                    <input type="checkbox" class="form-check-input" value="" id="memoeryFlage" [(ngModel)]="commande.memoeryFlage" name="memoeryFlage">Memoriser la commannde </label>
+                    <input type="checkbox" class="form-check-input" value="" id="memoeryFlage" [(ngModel)]="commande.memoeryFlage" name="memoeryFlage">Memoriser la commande </label>
                 </div>
             
             </div>
             <div class="card-footer">
               <button type="submit" class="btn btn-success" *ngIf="!commandeSucces" [disabled]="!commandeForm.form.valid">Commander</button>
-              <div *ngIf="commandeSucces">commander succes </div>
+              <div *ngIf="commandeSucces">
+                <p class="text-success">commander terminé avec succès </p>
+                <button   class="btn btn-info"   (click)="reset()">Initilaiser</button>
+                 </div>
             </div>
           </div>
         </div>

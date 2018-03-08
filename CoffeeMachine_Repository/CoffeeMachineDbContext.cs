@@ -1,5 +1,4 @@
 ﻿using CoffeeMachine.Models;
-using CoffeeMachine.GetWay.Migrations;
 using System.Data.Entity;
 using System.Data.Entity.ModelConfiguration.Conventions;
 namespace CoffeeMachine.GetWay
@@ -11,10 +10,8 @@ namespace CoffeeMachine.GetWay
         {
             this.Configuration.LazyLoadingEnabled = false;
             this.Configuration.ProxyCreationEnabled = false;
-
-            //Database.SetInitializer(
-            //  new MigrateDatabaseToLatestVersion<CoffeeMachineDbContext, Configuration>()
-            //  );
+            Database.SetInitializer<CoffeeMachineDbContext>(new CoffeeMachineDbInitializer());
+          
         }
 
         public DbSet<Boisson> Boisson { get; set; }

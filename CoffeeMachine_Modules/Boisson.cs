@@ -9,8 +9,7 @@ namespace CoffeeMachine.Models
     public class Boisson
     {
         public int boissonId { get; set; }
-        public string typeBoisson { get; set; }
-    
+        public string typeBoisson { get; set; }    
         public virtual ICollection<Commande> commandes { get; set; }
 
 

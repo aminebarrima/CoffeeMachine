@@ -16,7 +16,7 @@ import { BadgeService } from '../Services/badge.service';
 export class CommandeComponent implements OnInit {
   boissons: Boisson[];
   badges:Badge[];
-  commande = new Commande(new Badge());
+  commande = new Commande();
   commandeSucces = false;
   badge = new Badge();
   sucretable: number[] = [0, 1, 2, 3];
@@ -60,6 +60,13 @@ export class CommandeComponent implements OnInit {
         this.commande.commandeId = commande,
         this.commandeSucces=true
       });
+    }
+
+
+reset(){
+  this.commande = new Commande();
+  this.commandeSucces=false;
+}
+
 
   }
-}

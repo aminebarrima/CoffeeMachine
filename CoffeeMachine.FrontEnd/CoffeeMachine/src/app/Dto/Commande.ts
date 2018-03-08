@@ -2,8 +2,11 @@ import { Badge } from "./Badge";
 import { Boisson } from "./Boisson";
 
 export class Commande {
-  constructor(badge:Badge){
+ /* constructor(badge:Badge){
     this.badge=  badge;
+    this.dateCommande=new Date();
+  }*/
+  constructor(){
     this.dateCommande=new Date();
   }
     commandeId: number;
