@@ -21,7 +21,7 @@ namespace CoffeMachine.WebApi.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("DefaultConnection", throwIfV1Schema: false)
+            : base("CoffeeMachine", throwIfV1Schema: false)
         {
         }
         

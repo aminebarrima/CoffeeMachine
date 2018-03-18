@@ -7,6 +7,7 @@ using System;
 
 namespace CoffeMachine.WebApi.Controllers
 {
+    [Authorize]
     public class BoissonsController : ApiController
     {
        
