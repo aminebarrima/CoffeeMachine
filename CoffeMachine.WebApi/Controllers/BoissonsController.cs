@@ -9,7 +9,7 @@ namespace CoffeMachine.WebApi.Controllers
 {
     public class BoissonsController : ApiController
     {
-       
+
         private readonly IUnitOfWork _unitOfWork;
         public BoissonsController(IUnitOfWork unitOfWork)
         {
@@ -19,14 +19,17 @@ namespace CoffeMachine.WebApi.Controllers
         // GET: api/Boissons
         [HttpGet]
         [Route("api/Boissons")]
-        public IEnumerable<Boisson> GetBoisson()
+        public IHttpActionResult GetBoisson()
         {
-           
-            var boissonRepository = _unitOfWork.Repository<Boisson>();
-            return boissonRepository.GetAll().ToList();
-             
+
+            var boissonRepository = _unitOfWork.Repository<Boisson>();     
+            var Boissons=boissonRepository.GetAll().ToList();
+            if (Boissons != null)
+                return Ok(Boissons);
+            else
+                return NotFound();
         }
 
-        
+
     }
 }

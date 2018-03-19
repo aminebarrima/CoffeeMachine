@@ -26,13 +26,16 @@ namespace CoffeMachine.WebApi.Controllers
         // GET: api/Badges
         [HttpGet]
         [Route("api/Badges")]
-        public IEnumerable<Badge> GetBadge()
+        public IHttpActionResult GetBadge()
         {
-            var badgeRepository = _unitOfWork.Repository<Badge>();
-            return badgeRepository.GetAll().ToList();
+            var Badges = _unitOfWork.Repository<Badge>().GetAll().ToList();
+            if (Badges != null)
+                return Ok(Badges);
+            else
+                return NotFound();
 
         }
 
-        
+
     }
 }

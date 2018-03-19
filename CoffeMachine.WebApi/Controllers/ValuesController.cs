@@ -14,6 +14,8 @@ namespace CoffeMachine.WebApi.Controllers
     public class ValuesController : ApiController
     {
         // GET api/values
+        [HttpGet]
+        [Route("api/values")]
 
         public string Get()
         {

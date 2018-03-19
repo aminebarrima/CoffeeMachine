@@ -7,12 +7,14 @@ import { CommandeService } from '../Services/commande.service';
 import { NgForm } from '@angular/forms';
 import { Badge } from '../Dto/Badge';
 import { BadgeService } from '../Services/badge.service';
-
+import { ToastrService } from 'ngx-toastr';
+ 
 @Component({
   selector: 'app-commande',
   templateUrl: './commande.component.html',
   styleUrls: ['./commande.component.css']
 })
+
 export class CommandeComponent implements OnInit {
   boissons: Boisson[];
   badges:Badge[];
@@ -20,7 +22,8 @@ export class CommandeComponent implements OnInit {
   commandeSucces = false;
   badge = new Badge();
   sucretable: number[] = [0, 1, 2, 3];
-  constructor(private boissonService: BoissonService, private commandeService: CommandeService, private BadgeService: BadgeService) { }
+  constructor(private boissonService: BoissonService, private commandeService: CommandeService, private BadgeService: BadgeService
+  ,private toastr: ToastrService) { }
 
   ngOnInit() {
 
@@ -58,7 +61,8 @@ export class CommandeComponent implements OnInit {
     this.commandeService.AddCommande(this.commande)
       .subscribe(commande => {
         this.commande.commandeId = commande,
-        this.commandeSucces=true
+        this.commandeSucces=true,
+        this.toastr.success('commande terminée avec succès', 'Créer une commande');
       });
     }
 
@@ -66,6 +70,7 @@ export class CommandeComponent implements OnInit {
 reset(){
   this.commande = new Commande();
   this.commandeSucces=false;
+  
 }
 
 

@@ -26,13 +26,18 @@ namespace CoffeMachine.WebApi
             // Itinéraires de l'API Web
             config.MapHttpAttributeRoutes();
 
+
+
             //config.Routes.MapHttpRoute(
             //    name: "DefaultApi",
             //    routeTemplate: "api/{controller}/{id}",
             //    defaults: new { id = RouteParameter.Optional }
             //);
-            //config.Formatters.Remove(config.Formatters.XmlFormatter);
+            //Media-Type Formatters
+            config.Formatters.Remove(config.Formatters.XmlFormatter);
             config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/html"));
+            //Configure JSON Serialization:
+            config.Formatters.JsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
         }
     }
 }

@@ -8,7 +8,7 @@ import { catchError, map, tap } from 'rxjs/operators';
 
 @Injectable()
 export class BadgeService {
-  private CoffeeMachineApiUrl = 'http://localhost:52614/api/Badges';  
+  private CoffeeMachineApiUrl = 'http://localhost:26691/api/Badges';  
   constructor( private http: HttpClient) { }
 
   getBadges (): Observable<Badge[]> {

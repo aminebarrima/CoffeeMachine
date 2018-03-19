@@ -6,12 +6,14 @@ namespace CoffeeMachine.GetWay
     public class CoffeeMachineDbContext : DbContext
     {
         public CoffeeMachineDbContext()
-            : base("CoffeeMachine")
+            : base("name=DbCoffeeMachine")
         {
+           // Database.SetInitializer<CoffeeMachineDbContext>(new CoffeeMachineDbInitializer());
+            Database.SetInitializer<CoffeeMachineDbContext>(null);
+
             this.Configuration.LazyLoadingEnabled = false;
-            this.Configuration.ProxyCreationEnabled = false;
-            Database.SetInitializer<CoffeeMachineDbContext>(new CoffeeMachineDbInitializer());
-          
+           // this.Configuration.ProxyCreationEnabled = false;
+
         }
 
         public DbSet<Boisson> Boisson { get; set; }

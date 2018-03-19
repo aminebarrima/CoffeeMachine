@@ -57,6 +57,11 @@
     <Compile Include="CoffeeMachineDbContext.cs" />
     <Compile Include="Infrastructure\UnitOfWork.cs" />
     <Compile Include="Infrastructure\IUnitOfWork.cs" />
+    <Compile Include="Migrations\201803081042021_InitialCreate.cs" />
+    <Compile Include="Migrations\201803081042021_InitialCreate.Designer.cs">
+      <DependentUpon>201803081042021_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Repository\GenericRepository.cs" />
     <Compile Include="Repository\IRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -70,6 +75,11 @@
       <Project>{A6E40BE7-7CE0-422D-AACC-8752E25BFBA5}</Project>
       <Name>CoffeeMachine.Models</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201803081042021_InitialCreate.resx">
+      <DependentUpon>201803081042021_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

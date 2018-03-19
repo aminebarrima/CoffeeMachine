@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeMachine.WebApi", "Coff
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeMachine.WebApi.Tests", "CoffeMachine.WebApi.Tests\CoffeMachine.WebApi.Tests.csproj", "{59984ECF-922A-4A23-89A5-0A40179148CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeMachine.Web-API", "CoffeeMachine.Web-API\CoffeeMachine.Web-API.csproj", "{E035A9C7-D4BA-42FA-84A9-CB4260958A50}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{59984ECF-922A-4A23-89A5-0A40179148CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59984ECF-922A-4A23-89A5-0A40179148CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59984ECF-922A-4A23-89A5-0A40179148CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E035A9C7-D4BA-42FA-84A9-CB4260958A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E035A9C7-D4BA-42FA-84A9-CB4260958A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E035A9C7-D4BA-42FA-84A9-CB4260958A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E035A9C7-D4BA-42FA-84A9-CB4260958A50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

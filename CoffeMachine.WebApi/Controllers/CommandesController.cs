@@ -23,27 +23,22 @@ namespace CoffeMachine.WebApi.Controllers
             _unitOfWork = unitOfWork;
         }
 
-        
+
 
         [HttpGet]
         [Route("api/Commandes/{badgeId}")]
         public IHttpActionResult getMemoeryCommandeByBadge(int badgeId)
         {
-
             var commandeRepository = _unitOfWork.Repository<Commande>();
             var commande = commandeRepository
-                .FindBy(c => c.badgeId== badgeId && c.memoeryFlage==true)
+                .FindBy(c => c.badgeId == badgeId && c.memoeryFlage == true)
                 .OrderByDescending(o => o.dateCommande)
                 .FirstOrDefault();
-
             if (commande != null)
                 return Ok(commande);
             else
                 return NotFound();
-           
-
         }
-       
 
 
         [HttpPost]
@@ -59,16 +54,17 @@ namespace CoffeMachine.WebApi.Controllers
                 var commandeRepository = _unitOfWork.Repository<Commande>();
                 commandeRepository.Add(commande);
                 _unitOfWork.SaveChanges();
+                return Ok(commande.commandeId);
             }
             catch (Exception ex)
-            { 
-                return BadRequest("Error: commande not created :"+ex.Message);
+            {
+                return BadRequest("Error: commande not created :" + ex.Message);
             }
-            return Ok(commande.commandeId);
 
-          
+
+            return StatusCode(HttpStatusCode.NoContent);
         }
 
-        
+
     }
 }

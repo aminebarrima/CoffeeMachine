@@ -22,7 +22,7 @@ namespace CoffeeMachine.GetWay
             _objectSet = entities.Set<T>();
         }
        
-        public IEnumerable<T> GetAll(Func<T, bool> predicate = null)
+        public  IEnumerable<T> GetAll(Func<T, bool> predicate = null)
         {
             if (predicate != null)
             {
