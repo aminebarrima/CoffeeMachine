@@ -14,6 +14,7 @@ using CoffeeMachine.GetWay.Infrastructure;
 
 namespace CoffeMachine.WebApi.Controllers
 {
+    [Authorize]
     public class CommandesController : ApiController
     {
 

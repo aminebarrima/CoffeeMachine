@@ -9,9 +9,9 @@ import { HttpClientModule }    from '@angular/common/http';
 import { CommandeService } from './Services/commande.service';
 import { ShowErrorsComponent } from './show-errors/show-errors.component';
 import { BadgeService } from './Services/badge.service';
-<<<<<<< HEAD
-import { ToastrModule } from 'ngx-toastr';
-=======
+ 
+import { ToastrModule, ToastrService } from 'ngx-toastr';
+ 
 
 import { RegisterComponent } from './register/register.component';
 import { RegisterService } from './Services/register.service';
@@ -19,25 +19,13 @@ import { LoginComponent } from './login/login.component';
 
 import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-
-const appRoutes: Routes = [
-  { path: 'login', component: LoginComponent },
-  { path: 'Register',      component: RegisterComponent },
-  {
-    path: 'Commande',
-    component: CommandeComponent,
-    data: { title: 'Heroes List' }
-  },
-  { path: '',
-    redirectTo: '/Commande',
-    pathMatch: 'full'
-  },
-  { path: '**', component: PageNotFoundComponent }
-];
+import { HttpModule } from '@angular/http';
+import { LoginService } from './Services/login.service';
+import { MessageService } from './Services/message.service';
+import { CoffeMachineModule } from './routage/coffe-machine/coffe-machine.module';
 
 
-
->>>>>>> 22271d5e0059381b3032ba12d95920d67a94f97e
+ 
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,23 +33,26 @@ const appRoutes: Routes = [
     ShowErrorsComponent,
     RegisterComponent,
     LoginComponent,
-    PageNotFoundComponent
-  ],
+    PageNotFoundComponent,
+    RegisterComponent
+    ],
   imports: [
+    CoffeMachineModule ,
     BrowserModule,
     FormsModule,
-    HttpClientModule,
-<<<<<<< HEAD
+    HttpClientModule, 
+    HttpModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot()
-=======
-    RouterModule.forRoot(
-      appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
-    )
->>>>>>> 22271d5e0059381b3032ba12d95920d67a94f97e
+    
+    // , 
+    // RouterModule.forRoot(
+    //   appRoutes,
+    //   { enableTracing: true }  
+    // )
+ 
   ],
-  providers: [BoissonService,CommandeService,BadgeService,RegisterService],
+  providers: [BoissonService,CommandeService,BadgeService,RegisterService,LoginService,MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -5,11 +5,13 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 //import { Http, Response, Headers, RequestOptions, RequestMethod } from '@angular/http';
 
 import { Observable } from 'rxjs/Observable';
+import { environment } from '../../environments/environment';
 @Injectable()
 export class CommandeService {
-  private CoffeeMachineApiUrl = 'http://localhost:26691/api/Commandes';
-  private CoffeeMachineApiUrlCommandeByBadge = 'http://localhost:26691/api/getMemoeryCommandeByBadge'; 
- // private headers = new Headers({ 'Content-Type': 'application/json' });
+   
+  private CoffeeMachineApiUrl= environment.API_URL+'/api/Commandes';;
+  
+  
   private httpOptions = {
     headers: new HttpHeaders({
       'Content-Type':  'application/json',
@@ -20,8 +22,8 @@ export class CommandeService {
   constructor(private httpclient: HttpClient) { }
   
   AddCommande(commande: Commande): Observable<any> {
-    const url = `${this.CoffeeMachineApiUrl}`;
-    const result = this.httpclient.post(url, commande, this.httpOptions) ;
+     
+    const result = this.httpclient.post(this.CoffeeMachineApiUrl, commande, this.httpOptions) ;
    
     return result
   }
@@ -34,6 +36,7 @@ export class CommandeService {
   }*/
 
   getMemoeryCommandeByBadge (BadgeId: number): Observable<Commande> {
+     
     const url = `${this.CoffeeMachineApiUrl}/${BadgeId}`;     
     return this.httpclient.get<Commande>(url);
     //return this.http.get(url).subscribe((response: Response) => response.json())

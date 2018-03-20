@@ -5,7 +5,7 @@
   <div class="col-md-4 col-md-offset-4">
     <div class="panel panel-default">
       <div class="panel-body">
-        <form role="form">
+        <form #f="ngForm" novalidate (ngSubmit)="login(f)">
           <div class="form-group">
             <label for="exampleInputEmail1" class="sr-only">Email address</label>
             <div class="input-group">
@@ -28,8 +28,12 @@
             <input type="checkbox"> Stay signed in
             </label>
           </div>
-          <button type="button" onclick="window.location.href='http://www.polysnipp.com/main_category/bootstrap-snippets'" class="btn btn-success btn-sm">Sign in</button>
-          <button type="button" onclick="window.location.href='http://www.polysnipp.com/main_category/bootstrap-snippets'" class="btn btn-primary btn-sm">Create account</button>
+          <button type="submit"   class="btn btn-success btn-sm" [disabled]="f.invalid || isRequesting">Login</button>
+          <!-- <app-spinner [isRunning]="isRequesting"></app-spinner>  -->
+          <button type="button"  (*click)="register()" class="btn btn-primary btn-sm"   >Creer un compte</button>
+          <div *ngIf="errors" class="alert alert-danger" role="alert">
+            <strong>Oops!</strong> {{errors}}
+          </div> 
         </form>
       </div>
     </div>

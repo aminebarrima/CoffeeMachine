@@ -21,7 +21,7 @@ namespace CoffeMachine.WebApi.Models
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext()
-            : base("CoffeeMachine", throwIfV1Schema: false)
+            : base("name=DbCoffeeMachine", throwIfV1Schema: false)
         {
         }
         
