@@ -10,8 +10,7 @@ import { CommandeService } from './Services/commande.service';
 import { ShowErrorsComponent } from './show-errors/show-errors.component';
 import { BadgeService } from './Services/badge.service';
  
-import { ToastrModule, ToastrService } from 'ngx-toastr';
- 
+import { ToastrModule, ToastrService } from 'ngx-toastr'; 
 
 import { RegisterComponent } from './register/register.component';
 import { RegisterService } from './Services/register.service';
@@ -21,11 +20,33 @@ import { RouterModule, Routes } from '@angular/router';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { HttpModule } from '@angular/http';
 import { LoginService } from './Services/login.service';
-import { MessageService } from './Services/message.service';
-import { CoffeMachineModule } from './routage/coffe-machine/coffe-machine.module';
+import { MessageService } from './message.service';
+
+import { AuthGuard } from './auth-guard/auth-guard';
+import { CoffeMachineRoutingModule } from './coffe-machine-routing.module';
 
 
- 
+const appRoutes: Routes = [
+  { path: 'login', component: LoginComponent },
+  { path: 'Register',      component: RegisterComponent },
+  {
+    path: 'Commande',
+    component: CommandeComponent,
+    data: { title: 'Commande  List' }
+  },
+  { path: '',
+    redirectTo: '/Commande',
+    pathMatch: 'full',
+    canActivate: [
+      'CanAlwaysActivateGuard',
+      AuthGuard
+     ]    
+  },
+  { path: '**', component: PageNotFoundComponent }
+];
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -37,22 +58,23 @@ import { CoffeMachineModule } from './routage/coffe-machine/coffe-machine.module
     RegisterComponent
     ],
   imports: [
-    CoffeMachineModule ,
+    // CoffeMachineModule ,
+    // CoffeMachineRoutingModule,
     BrowserModule,
     FormsModule,
     HttpClientModule, 
     HttpModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot()
-    
-    // , 
-    // RouterModule.forRoot(
-    //   appRoutes,
-    //   { enableTracing: true }  
-    // )
+      
+      , 
+      RouterModule.forRoot(
+       appRoutes,
+      { enableTracing: true }  
+     )
  
   ],
-  providers: [BoissonService,CommandeService,BadgeService,RegisterService,LoginService,MessageService],
+  providers: [BoissonService,CommandeService,BadgeService,RegisterService,LoginService,MessageService,AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
