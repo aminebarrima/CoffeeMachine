@@ -24,6 +24,7 @@ import { MessageService } from './message.service';
 
 import { AuthGuard } from './auth-guard/auth-guard';
 import { CoffeMachineRoutingModule } from './coffe-machine-routing.module';
+import { HighlightDirective } from './highlight.directive';
 
 
 const appRoutes: Routes = [
@@ -55,7 +56,8 @@ const appRoutes: Routes = [
     RegisterComponent,
     LoginComponent,
     PageNotFoundComponent,
-    RegisterComponent
+    RegisterComponent,
+    HighlightDirective
     ],
   imports: [
     // CoffeMachineModule ,
