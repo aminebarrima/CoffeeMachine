@@ -1,0 +1,1 @@
+<Playlist Version="1.0"><Add Test="CoffeMachine.WebApi.Tests.Controllers.BadgesControllerTest.Badges_GetBadge_Should_Return_ListBadgesWithSameLenght" /><Add Test="CoffeMachine.WebApi.Tests.Controllers.BoissonsControllerTest.GBoissons_GeBoisson_Should_Return_ListBoissonsWithSameLenght" /></Playlist>

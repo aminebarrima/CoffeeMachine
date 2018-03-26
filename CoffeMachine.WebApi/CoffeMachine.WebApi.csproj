@@ -305,8 +305,6 @@
     <Compile Include="Controllers\BadgesController.cs" />
     <Compile Include="Controllers\BoissonsController.cs" />
     <Compile Include="Controllers\CommandesController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

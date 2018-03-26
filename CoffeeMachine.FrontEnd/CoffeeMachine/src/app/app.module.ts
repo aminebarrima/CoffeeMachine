@@ -38,9 +38,9 @@ const appRoutes: Routes = [
     redirectTo: '/Commande',
     pathMatch: 'full',
     canActivate: [
-      'CanAlwaysActivateGuard',
-      AuthGuard
-     ]    
+    //'CanAlwaysActivateGuard',
+     AuthGuard
+    ]    
   },
   { path: '**', component: PageNotFoundComponent }
 ];

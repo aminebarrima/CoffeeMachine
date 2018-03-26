@@ -6,10 +6,12 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 import { catchError, map, tap } from 'rxjs/operators';
+import { environment } from '../../environments/environment';
 
 @Injectable()
 export class BoissonService {
-  private CoffeeMachineApiUrl = 'http://localhost:26691/api/Boissons';  
+  private CoffeeMachineApiUrl = environment.API_URL+'/api/Boissons';
+  //'http://localhost:26691/api/Boissons';  
   constructor( private http: HttpClient) { }
 
   getBoissons (): Observable<Boisson[]> {
