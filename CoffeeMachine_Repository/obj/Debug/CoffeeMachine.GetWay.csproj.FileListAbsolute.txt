@@ -1,0 +1,16 @@
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\CoffeeMachine.GetWay.dll.config
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\CoffeeMachine.GetWay.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\CoffeeMachine.GetWay.pdb
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\CoffeeMachine.Models.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\EntityFramework.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\Ninject.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\CoffeeMachine.Models.pdb
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\EntityFramework.xml
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\bin\Debug\Ninject.xml
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\obj\Debug\CoffeeMachine.GetWay.csprojResolveAssemblyReference.cache
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\obj\Debug\CoffeeMachine.GetWay.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\obj\Debug\CoffeeMachine.GetWay.pdb
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\obj\Debug\CoffeeMachine.GetWay.Migrations.InitialCreate.resources
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Repository\obj\Debug\CoffeeMachine.GetWay.csproj.GenerateResource.Cache

@@ -34,11 +34,18 @@ export class LoginComponent implements OnInit {
         .subscribe(
         result => {         
           if (result) {
+            localStorage.setItem('currentUser',result),
             this.isRequesting = false,
-             this.router.navigate(['/Commande']);             
+             this.router.navigate(['/Commande'])            
           }
         },
         error => this.errors = error);
     }
+}
+
+logout(): void {
+  // clear token remove user from local storage to log user out
+  
+  localStorage.removeItem('currentUser');
 }
 }

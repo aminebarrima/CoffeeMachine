@@ -1,0 +1,14 @@
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\CoffeeMachine.Models.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\CoffeeMachine.Models.pdb
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\Microsoft.AI.Agent.Intercept.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\Microsoft.AI.DependencyCollector.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\Microsoft.AI.WindowsServer.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\Microsoft.ApplicationInsights.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\Microsoft.AI.DependencyCollector.xml
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\Microsoft.AI.WindowsServer.xml
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\obj\Debug\CoffeeMachine.Models.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\obj\Debug\CoffeeMachine.Models.pdb
