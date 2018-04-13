@@ -12,3 +12,4 @@ C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\Microsoft.A
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\bin\Debug\System.Diagnostics.DiagnosticSource.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\obj\Debug\CoffeeMachine.Models.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\obj\Debug\CoffeeMachine.Models.pdb
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeeMachine_Modules\obj\Debug\CoffeeMachine.Models.csprojResolveAssemblyReference.cache
