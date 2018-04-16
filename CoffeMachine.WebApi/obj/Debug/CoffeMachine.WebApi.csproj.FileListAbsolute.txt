@@ -132,7 +132,6 @@ C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\EntityFramework.
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.AspNet.Identity.Core.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.AspNet.Identity.Owin.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.AspNet.Identity.EntityFramework.resources.dll
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.Host.SystemWeb.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.Security.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.Security.Facebook.resources.dll
@@ -140,3 +139,5 @@ C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.S
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\System.Web.Http.Owin.resources.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Cors.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Cors.xml

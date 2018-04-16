@@ -21,7 +21,9 @@ import { LoginService } from './Services/login.service';
 import { RegisterService } from './Services/register.service';
 import { MessageService } from './message.service';
 import { CommanderModule } from './components/commande/Commander.module';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthGuard, AuthGuardChild } from './auth-guard';
+import { Interceptor } from './interceptor';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,12 @@ import { HttpClientModule } from '@angular/common/http';
   ],
   exports: [ScrollModule],
   providers: [BadgeService,BoissonService,CommandeService,LoginService,RegisterService,MessageService,
-      { provide: LocationStrategy, useClass: PathLocationStrategy }
+      { provide: LocationStrategy, useClass: PathLocationStrategy },AuthGuard,AuthGuardChild,
+      {
+        provide: HTTP_INTERCEPTORS,
+        useClass: Interceptor,
+        multi: true
+      }
   ],
   bootstrap: [AppComponent]
 })

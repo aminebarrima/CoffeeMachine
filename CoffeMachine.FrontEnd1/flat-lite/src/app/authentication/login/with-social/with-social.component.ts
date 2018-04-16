@@ -49,8 +49,8 @@ export class WithSocialComponent implements OnInit {
           if (result) {
             localStorage.setItem('currentUser',JSON.stringify({result})),
             this.isRequesting = false,
-            console.debug('local storage'+ localStorage.getItem('currentUser'))
-             this.router.navigate(['commande'])            
+            console.log('local storage'+ localStorage.getItem('currentUser'))
+             this.router.navigate([''])            
           }
         },
         error => this.errors = error);

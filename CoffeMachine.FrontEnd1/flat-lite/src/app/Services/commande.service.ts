@@ -9,7 +9,7 @@ import { environment } from '../../environments/environment';
 @Injectable()
 export class CommandeService {
    
-  private CoffeeMachineApiUrl= environment.API_URL+'/api/Commandes';;
+  private CoffeeMachineApiUrl= environment.API_URL+'api/Commandes';;
   
   
   private httpOptions = {

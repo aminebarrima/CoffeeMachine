@@ -2,6 +2,7 @@ import {Routes} from '@angular/router';
 
 import {AdminLayoutComponent} from './layouts/admin/admin-layout.component';
 import {AuthLayoutComponent} from './layouts/auth/auth-layout.component';
+import { AuthGuard, AuthGuardChild } from './auth-guard';
 
 export const AppRoutes: Routes = [{
   path: '',
@@ -10,19 +11,26 @@ export const AppRoutes: Routes = [{
     {
       path: '',
       redirectTo: 'dashboard',
-      pathMatch: 'full'
+      pathMatch: 'full',
+     
     }, {
       path: 'dashboard',
-      loadChildren: './dashboard/dashboard.module#DashboardModule'
+      loadChildren: './dashboard/dashboard.module#DashboardModule',
+     
     }, 
     {
       path: 'commande',
-      loadChildren: './components/commande/Commander.module#CommanderModule'
+      loadChildren: './components/commande/Commander.module#CommanderModule',
+      canActivateChild: [
+        //'CanAlwaysActivateGuard',
+        AuthGuardChild
+        ] 
     }, 
     
     {
       path: 'basic',
-      loadChildren: './components/basic/basic.module#BasicModule'
+      loadChildren: './components/basic/basic.module#BasicModule',
+        
     }, {
       path: 'advance',
       loadChildren: './components/advance/advance.module#AdvanceModule'

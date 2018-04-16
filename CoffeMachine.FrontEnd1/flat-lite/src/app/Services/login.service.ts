@@ -74,4 +74,9 @@ export class LoginService {
     //this.token = null;
     localStorage.removeItem('currentUser');
 }
+getToken(){
+   console.log(JSON.parse(localStorage.getItem('currentUser')).result.access_token);
+   return JSON.parse(localStorage.getItem('currentUser')).result.access_token   ; 
+}
+
 }
