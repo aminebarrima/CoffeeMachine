@@ -1,4 +1,3 @@
-using CoffeeMachine.GetWay.Infrastructure;
 using System.Web.Http;
 using Unity;
 using System.Web.Mvc;
@@ -7,9 +6,9 @@ using Unity.Injection;
 using Microsoft.AspNet.Identity;
 using CoffeMachine.WebApi.Models;
 using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.Owin.Security;
 using System.Data.Entity;
 using CoffeMachine.WebApi.Controllers;
+using CoffeeMachine.GetWay.Infrastructure;
 
 namespace CoffeMachine.WebApi
 {

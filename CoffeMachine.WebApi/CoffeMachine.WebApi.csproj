@@ -310,6 +310,7 @@
     <Compile Include="Controllers\BadgesController.cs" />
     <Compile Include="Controllers\BoissonsController.cs" />
     <Compile Include="Controllers\CommandesController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -399,11 +400,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CoffeeMachine_Modules\CoffeeMachine.Models.csproj">
-      <Project>{A6E40BE7-7CE0-422D-AACC-8752E25BFBA5}</Project>
+    <ProjectReference Include="..\CoffeeMachine.Models\CoffeeMachine.Models.csproj">
+      <Project>{9cae1e04-4b1f-4ca9-90bd-1a72a851d337}</Project>
       <Name>CoffeeMachine.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\CoffeeMachine_Repository\CoffeeMachine.GetWay.csproj">
+    <ProjectReference Include="..\CoffeeMachine.GetWay\CoffeeMachine.GetWay.csproj">
       <Project>{133234E3-7F8E-497B-B936-34FBCAEA910A}</Project>
       <Name>CoffeeMachine.GetWay</Name>
     </ProjectReference>

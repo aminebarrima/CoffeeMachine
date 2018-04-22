@@ -1,0 +1,68 @@
+<div class="row">
+  <div class="col-sm-12">
+    <app-card [title]="'Commande Machine Coffee'">
+      <h4 class="sub-title">veuillez remplire votre choix</h4>
+
+      <form (ngSubmit)="onSubmit(commandeForm)" #commandeForm="ngForm">
+
+        <div class="">
+
+          <div class="form-group row">
+            <label for="badge" class="col-sm-2 col-form-label">Badge</label>
+            <div class="col-sm-10">
+              <select id="badge" required [(ngModel)]="commande.badgeId" (ngModelChange)="onChange($event)" name="badgeId" #badgeId="ngModel">
+                <option *ngFor="let badge of badges" [ngValue]="badge.badgeId">{{badge.keyBadge}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="boisson" class="col-sm-2 col-form-label">Type de boisson </label>
+            <div class="col-sm-10">
+              <select id="boisson" required [(ngModel)]="commande.boissonId" name="boissonId" #boissonId="ngModel">
+                <option *ngFor="let boisson of boissons" [ngValue]="boisson.boissonId">{{boisson.typeBoisson}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="sucre" class="col-sm-2 col-form-label">Quantité de sucre</label>
+            <div class="col-sm-10">
+              <select id="sucre" required [(ngModel)]="commande.sucre" name="sucre" #sucre="ngModel">
+                <option *ngFor="let s of sucretable" [ngValue]="s">{{s}}</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Utiliser votre propre Mug</label>
+
+            <div class="col-sm-10">
+              <input type="checkbox" class="form-check-input" value="" id="withMug" [(ngModel)]="commande.withMug" name="withMug" />
+            </div>
+          </div>
+          <div class=" form-group row ">
+            <label for="memoeryFlage" class="col-sm-2 col-form-label">Memoriser la commande </label>
+            <div class="col-sm-10">
+              <input type="checkbox" class="form-check-input" value="" id="memoeryFlage" [(ngModel)]="commande.memoeryFlage" name="memoeryFlage">
+            </div>
+          </div>
+
+          <div class="card-footer">
+            <div class=" form-group row ">
+              <div class="col-sm-2">
+                <button type="submit" class="btn btn-success btn-skew " [disabled]="!commandeForm.form.valid || commandeSucces">
+                  <i class="icofont icofont-check-circled"></i>
+                  Commander</button>
+              </div>
+              <div class="col-sm-2 ">
+                <button class="btn btn-info btn-skew"   (click)="reset()">
+                  <i class="icofont icofont-ui-reply"></i>
+                  Initilaiser</button>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </form>
+    </app-card>
+  </div>
+</div>

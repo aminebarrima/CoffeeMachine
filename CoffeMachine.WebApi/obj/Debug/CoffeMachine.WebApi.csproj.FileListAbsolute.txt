@@ -1,3 +1,4 @@
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\obj\Debug\CoffeMachine.WebApi.csprojResolveAssemblyReference.cache
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\roslyn\csc.exe
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
@@ -10,6 +11,9 @@ C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\roslyn\System.Refle
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\roslyn\vbc.exe
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\roslyn\VBCSCompiler.exe
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\CoffeMachine.WebApi.dll.config
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\CoffeMachine.WebApi.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\CoffeMachine.WebApi.pdb
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Antlr3.Runtime.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\CoffeeMachine.GetWay.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\CoffeeMachine.Models.dll
@@ -28,6 +32,7 @@ C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.AspNet.Id
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.AspNet.Identity.Owin.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.AspNet.TelemetryCorrelation.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Cors.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Host.SystemWeb.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Security.Cookies.dll
@@ -74,6 +79,8 @@ C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.AI.Web.xm
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.AI.WindowsServer.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.AspNet.TelemetryCorrelation.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.xml
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Cors.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\System.Net.Http.Formatting.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\System.Web.Http.xml
@@ -101,7 +108,6 @@ C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\EntityFramework.Sql
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.AspNet.Identity.Core.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.AspNet.Identity.Owin.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Host.SystemWeb.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Security.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Security.Facebook.xml
@@ -111,12 +117,6 @@ C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Secu
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\System.Web.Http.Owin.xml
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\obj\Debug\CoffeMachine.WebApi.csprojResolveAssemblyReference.cache
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\obj\Debug\CoffeMachine.WebApi.dll
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\obj\Debug\CoffeMachine.WebApi.pdb
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\CoffeMachine.WebApi.dll.config
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\CoffeMachine.WebApi.dll
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\CoffeMachine.WebApi.pdb
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\System.Net.Http.Formatting.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\System.Web.Http.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\System.Web.Helpers.resources.dll
@@ -139,5 +139,5 @@ C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.S
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.Security.Twitter.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\Microsoft.Owin.Security.MicrosoftAccount.resources.dll
 C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\fr\System.Web.Http.Owin.resources.dll
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Cors.dll
-C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\bin\Microsoft.Owin.Cors.xml
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\obj\Debug\CoffeMachine.WebApi.dll
+C:\Users\E6420\Desktop\CoffeeMachine\CoffeMachine.WebApi\obj\Debug\CoffeMachine.WebApi.pdb

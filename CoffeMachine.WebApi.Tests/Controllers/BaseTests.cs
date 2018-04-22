@@ -1,13 +1,7 @@
-﻿using CoffeeMachine.GetWay;
-using CoffeeMachine.GetWay.Infrastructure;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+using CoffeeMachine.GetWay.Infrastructure;
+using CoffeeMachine.GetWay;
 namespace CoffeMachine.WebApi.Tests.Controllers
 {
     [TestClass]

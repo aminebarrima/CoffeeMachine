@@ -133,16 +133,16 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CoffeeMachine_Modules\CoffeeMachine.Models.csproj">
-      <Project>{A6E40BE7-7CE0-422D-AACC-8752E25BFBA5}</Project>
-      <Name>CoffeeMachine.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\CoffeeMachine_Repository\CoffeeMachine.GetWay.csproj">
-      <Project>{133234E3-7F8E-497B-B936-34FBCAEA910A}</Project>
+    <ProjectReference Include="..\CoffeeMachine.GetWay\CoffeeMachine.GetWay.csproj">
+      <Project>{133234e3-7f8e-497b-b936-34fbcaea910a}</Project>
       <Name>CoffeeMachine.GetWay</Name>
     </ProjectReference>
+    <ProjectReference Include="..\CoffeeMachine.Models\CoffeeMachine.Models.csproj">
+      <Project>{9cae1e04-4b1f-4ca9-90bd-1a72a851d337}</Project>
+      <Name>CoffeeMachine.Models</Name>
+    </ProjectReference>
     <ProjectReference Include="..\CoffeMachine.WebApi\CoffeMachine.WebApi.csproj">
-      <Project>{F78018D8-DFD7-49F8-B7D8-E6FC8D871C41}</Project>
+      <Project>{f78018d8-dfd7-49f8-b7d8-e6fc8d871c41}</Project>
       <Name>CoffeMachine.WebApi</Name>
     </ProjectReference>
   </ItemGroup>

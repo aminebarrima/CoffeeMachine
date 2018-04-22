@@ -14,6 +14,7 @@ namespace CoffeMachine.WebApi
         {
            ConfigureAuth(app);
             //app.UseWebApi(WebApiConfig.Register());
+            
         }
     }
 }
