@@ -18,6 +18,8 @@ namespace CoffeMachine.WebApi.Controllers
         }
 
 
+        //test
+
 
         [HttpGet]
         [Route("api/Commandes/{badgeId}")]
